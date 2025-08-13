@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Projeto pessoal sobre mim">
+    <title>Página de Apresentação Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <h1>Guilherme Gusman</h1>
+            <p>Um pouco sobre mim para que você me conheça melhor.</p>
+    </header>
+    <main>
+        <!-- introdução-->
+        <section>
+            <h2>Quem sou eu?</h2>
+            <p>Meu nome é <strong>Guilherme Gusman Conceição</strong>, eu tenho 18 anos e curso Análise e Desenvolvimento de Sistemas na Universidade Cruzeiro do Sul de São Miguel Paulista.</p>
+        </section>
+        <!-- Entendendo Mais sobre meus gostos: Seleção Múltipla-->
+        <section>
+            <h2>Dessas 5 alternativas, 2 não fazem parte da minha pessoa, selecione as que se enquadram a mim:</h2>
+            <form>
+                <input type="checkbox" value="Igreja" id="p1a">
+                <label for="p1a">Igreja</label> <br>
+                <input type="checkbox" value="Estudos" id="p1b">
+                <label for="p1b">Barzinho<label><br>                             
+                <input type="checkbox" value="Barzinho" id="p1c">
+                <label for="p1c">Academia</label> <br>                
+                <input type="checkbox" value="Estudos" id="p1d">
+                <label for="p1d">Estudos</label><br>
+                <input type="checkbox" value="Baladas" id="p1e">
+                <label for="p1e">Baladas</label>
+            </form>
+        </section>
+        <!--Linguagens que eu já aprendi: texto-->
+        <section>
+            <h2>Cite uma linguagem de Programação que eu já aprendi:</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta 2" placeholder="Ex: Python, Java, PHP...">
+            </form>
+        </section>
+        <!--Cite uma Linguagem que eu deveria aprender: senha-->
+        <section>
+            <h2>Cite uma linguagem que eu deveria aprender:</h2>
+        <form>
+            <input type="password" id="p3" name="pergunta3" placeholder="Digite uma linguagem...">
+        </form>
+        </section>
+        <!--Em qual ano eu comecei a estudar programação:data-->
+        <section>
+            <h2>Selecione em qual ano eu comecei programação:</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+        </section>
+        <!--Qual semestre eu estou na faculdade: multipla escolha-->
+        <section>
+            <h2>Qual semestre eu estou na faculdade?</h2>
+            <form>
+                <input type="radio" value="Primeiro Semestre" id="p5a" name="pergunta5">
+                <label for="p5a">Primeiro Semestre</label><br>
+                <input type="radio" value="Segundo Semestre" id="p5b" name="pergunta5">
+                <label for="p5b">Segundo Semestre</label><br>
+                <input type="radio" value="Terceiro Semestre" id="p5c" name="pergunta5">
+                <label for="p5c">Terceiro Semestre</label><br>
+                <input type="radio" value="Quarto Semestre" id="p5d" name="pergunta5">
+                <label for="p5d">Quarto Semestre</label>
+
+            </form>
+        </section>
+        <!--Qual é a minha comida favorita?-->
+        <section>
+            <h2>Qual é a minha comida favorita?</h2>
+            <form>
+                <select name="pergunta6" id="p5">
+                    <option value="Lasanha">Lasanha</option>
+                    <option value="Feijoada">Feijoada</option>
+                    <option value="Macarronada">Macarronada</option>
+                    <option value="Strogonoff">Strogonoff</option>
+                    <option value="Churrasco">Churrasco</option>
+                </select>
+            </form>
+        </section>
+        <!--Cite o meu nome Completo: Imagem-->
+        <section>
+            <figure>
+                <img src="https://avatars.githubusercontent.com/u/225244532?    v=4" alt="minha imagem">
+                <figcaption>Imagem de um belo rapaz</figcaption>
+            </figure>
+            <input type="text" id="p7" name="pergunta7"     placeholder="Escreva um comentário...">
+        </section>
+        <!--Tabela de Acertos-->
+        <section>
+            <h2>Tabela de Acertos</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nota</th>
+                        <th>Desempenho</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>0-3</td>
+                        <td>Você ainda não me conhece</td>
+                    </tr>
+                    <tr>
+                        <td>4-7</td>
+                        <td>Você já sabe bastante de mim, mas da pra melhorar</td>
+                    </tr>
+                    <tr>
+                        <td>8-10</td>
+                        <td>Somos mais que amigos, somos brothers</td>
+                    </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            Fico feliz que você está gostando do meu projeto!
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!--Lista de Respostas-->
+        <section>
+            <h2>Verifique suas Respostas</h2>
+            <details>
+                <summary>Clique aqui para ver as Respostas</summary>
+                <ol>
+                    <li>Igreja, Academia e Estudos</li>
+                    <li>Python ou HTML</li>
+                    <li>SenhaForte123</li>
+                    <li>17/02/2024</li>
+                    <li>Segundo Semestre</li>
+                    <li>Feijoada</li>
+                    <li>Um rapaz mui belo</li>
+                </ol>
+            </details>
+        </section>
+        <!--Me dê o seu Feedback-->
+        <section>
+            <h2>Me dê o seu Feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Coloque o Feedback</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comentarios">Comentários:</label><br>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite seu comentário aqui..."></textarea> <br>
+                    <button>Enviar Feedback</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="paragrafo-footer">Projeto Pessoal. Todos os direitos Reservados &copy; 2025</p>
+        <p class="paragrafo-footer">Para acessar mais Projetos meus, <a href="https://github.com/GusmanGC" target="_blank">clique aqui.</a></p>
+    </footer>
+</body>
+</html>
